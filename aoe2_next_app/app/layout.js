@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import { Navigation } from './components/Navigation';
+import { Navbar, Header } from '../components/Layout';
 
 export default function RootLayout({ children }) {
   return (
@@ -8,7 +8,8 @@ export default function RootLayout({ children }) {
         <title> Next13 app</title>
       </head>
       <body>
-        <Navigation />
+        <Header />
+        <Navbar />
         {children}
       </body>
     </html>

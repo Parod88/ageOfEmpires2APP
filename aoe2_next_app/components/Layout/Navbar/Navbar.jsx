@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from './Navigation.module.css'
+import styles from './navbar.module.css'
 
 const links = [
   {
@@ -10,9 +10,13 @@ const links = [
     label: 'About',
     route: '/about',
   },
+  {
+    label: 'Civilizations',
+    route: 'civilizations'
+  }
 ];
 
-export function Navigation() {
+function Navbar() {
     return (
         <header className={styles.header}>
           <nav>
@@ -27,3 +31,5 @@ export function Navigation() {
         </header>
     )
 }
+
+export default Navbar
